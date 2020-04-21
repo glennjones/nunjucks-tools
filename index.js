@@ -1,8 +1,3 @@
 
-const withTag = require('./lib/with.js');
-const includeWithTag = require('./lib/includewith.js');
-
-module.exports = {
-    withTag,
-    includeWithTag
-}
+module.exports.with = require('./lib/with.js'),
+module.exports.includeWith = require('./lib/include-with.js')

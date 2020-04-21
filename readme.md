@@ -15,8 +15,8 @@ const Nunjucks = require('nunjucks');
 const NunjucksTools = require('nunjucks-tools');
 const env = new Nunjucks.Environment();
 
-env.addExtension('with', new NunjucksTools.withTag(env));
-env.addExtension('withInclude', new NunjucksTools.withIncludeTag(env));
+env.addExtension('with', new NunjucksTools.with(env));
+env.addExtension('withInclude', new NunjucksTools.withInclude(env));
 
 ````
 
